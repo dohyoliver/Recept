@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/rTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recept neve"
+        android:padding="12dp"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/rQuality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Minőség (1-100)"
+        android:padding="12dp"
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/rDifficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nehézség (0-3)"
+        android:padding="12dp"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hozzáadás" />
+
+
+    <ListView
+        android:id="@+id/lvBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

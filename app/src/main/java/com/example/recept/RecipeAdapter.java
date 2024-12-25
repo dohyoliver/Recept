@@ -29,10 +29,12 @@ public class RecipeAdapter extends ArrayAdapter<recipe> {
         recipe recipe = getItem(position);
         TextView title = convertView.findViewById(R.id.rTitle);
         TextView quality = convertView.findViewById(R.id.rQuality);
+        TextView difficulty = convertView.findViewById(R.id.rDifficulty);
         Button btnDelete = convertView.findViewById(R.id.btnDelete);
 
         title.setText(recipe.getTitle());
-        quality.setText(recipe.getDifficulty());
+        quality.setText(recipe.getQuality());
+        difficulty.setText(recipe.getDifficulty());
 
         btnDelete.setOnClickListener(view -> new AlertDialog.Builder(getContext())
                 .setTitle("Törlés")

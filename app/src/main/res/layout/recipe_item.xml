@@ -13,7 +13,6 @@
             android:id="@+id/rTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Recept neve"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -22,7 +21,12 @@
             android:id="@+id/rQuality"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Minőség: 0-100"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/rDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textSize="14sp" />
 
 
